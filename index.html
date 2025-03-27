@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <link rel="stylesheet" href="style.css" />
+    <title>Markdown</title>
+  </head>
+  <body>
+    <div class="heading">
+      <h1>Markdown Previewer</h1>
+    </div>
+
+    <div class="edit">
+      <button class="copy-btn">Copy</button>
+      <button class="clr-btn">Clear</button>
+    </div>
+    <div class="container">
+      <div class="left">
+        <textarea
+          placeholder="Enter Your Markdown Here....."
+          id="markdown"
+          onkeydown="insertTabSpaces(event)""
+        ></textarea>
+      </div>
+
+      <div class="right">
+        <div id="preview"> </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/marked-highlight/lib/index.umd.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
